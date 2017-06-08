@@ -16,9 +16,9 @@
 (defun fizzbuzz-helper (n x)
   (if (<= n x)
       (cons
-        (case (mod n 15)
+        (case (cl:mod n 15)
           (0 "FizzBuzz")
           ((3 6 9 12) "Fizz")
           ((5 10) "Buzz")
           (otherwise n))
-        (fizzbuzz-helper (+ 1 n) x))))
+        (fizzbuzz-helper (1+ n) x))))
