@@ -7,7 +7,7 @@
 
 (defpackage #:arrayfire
   (:nicknames #:af)
-  (:use #:cl)
+  (:use #:cl #:cffi)
   ; as these will probably pose a small issue...
   (:shadow ; Arithmatic Ops
            #:+ #:- #:* #:/
